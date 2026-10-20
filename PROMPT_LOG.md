@@ -391,3 +391,4 @@ Liệt kê các dòng đã sửa và các placeholder còn lại cần SV điề
 3. **Dùng ràng buộc phủ định và giới hạn phạm vi** ("không thêm framework", "không đổi màu thương hiệu", "chỉ sửa những gì liệt kê") để AI không tự ý viết lại những phần đã ổn.
 4. **Phải kiểm tra lại kết quả trên trình duyệt và cập nhật nhật ký.** Có những thay đổi sau cùng (menu dùng nút `<button>`, đoạn JS dài hơn dự kiến) đi lệch khỏi prompt ban đầu; nếu không ghi lại thì nhật ký sẽ không còn phản ánh đúng sản phẩm.
 5. **Review chéo bằng một AI khác và tự kiểm chứng nhận định của nó.** AI viết code thường bỏ sót chính lỗi nó đã mắc, nhưng AI review cũng có thể nhận định sai (như vụ `fill-mode`), nên mọi gợi ý đều phải đối chiếu với tài liệu thư viện trước khi đưa vào prompt.
+ 
