@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Lạc Hồng | Không Gian Ấm Áp &amp; Hương Vị Cà Phê Mộc</title>
+  <meta name="description" content="Cafe Lạc Hồng - Quán cà phê mang phong cách tối giản, ấm áp với tone màu xanh và kem. Điểm đến lý tưởng để thưởng thức cà phê nguyên chất và tìm lại sự an yên.">
+
+  <!-- Favicon bằng SVG Emoji Data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- Fallback hiển thị khi trình duyệt không chạy JavaScript / AOS -->
+  <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- AOS CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- File CSS tùy biến chính của dự án -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link hỗ trợ trợ năng bàn phím -->
+  <a href="#main-content" class="skip-link">Bỏ qua đến nội dung chính</a>
+
+  <!-- ==================== HEADER & THANH ĐIỀU HƯỚNG ==================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Logo thương hiệu -->
+      <a href="#hero" class="brand-logo" aria-label="Về đầu trang Cafe Lạc Hồng">
+        <span class="logo-mark"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+        <span class="logo-text">Cafe Lạc Hồng</span>
+      </a>
+
+      <!-- Nút menu mobile: <button> thật, có aria-expanded/aria-controls -->
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu điều hướng">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu chính điều hướng -->
+      <nav class="navbar" id="primary-nav" aria-label="Thanh điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Về chúng tôi</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Đánh giá</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary nav-cta">Đặt bàn ngay</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== PHẦN THÂN TRANG (MAIN) ==================== -->
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO (BANNER CHÍNH) -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="hero-badge animate__animated animate__fadeIn">Hương Vị Nguyên Bản • Không Gian An Yên</span>
+        <!-- Tiêu đề lớn xuất hiện tuần tự -->
+        <h1 id="hero-title" class="hero-title animate__animated animate__fadeInDown">Cafe Lạc Hồng</h1>
+        <!-- Slogan xuất hiện tiếp nối sau h1 -->
+        <p class="hero-slogan animate__animated animate__fadeInUp">
+          Khám phá sự giao thoa tinh tế giữa hạt cà phê mộc Tây Nguyên và không gian tĩnh lặng, ấm áp ngập tràn sắc xanh.
+        </p>
+        <div class="hero-actions animate__animated animate__fadeInUp">
+          <!-- Nút CTA lặp lại 2 lần sau khi xuất hiện -->
+          <a href="#contact" class="btn btn-primary animate__animated animate__pulse animate__repeat-2">Đặt bàn ngay</a>
+          <a href="#menu" class="btn btn-outline-light">Khám phá menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MENU (THỰC ĐƠN TĨNH 6 SẢN PHẨM) -->
+    <section id="menu" class="section section-menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-tag">Thực Đơn Tuyển Chọn</span>
+          <h2 id="menu-title" class="section-title">Hương Vị Đậm Đà Khó Quên</h2>
+          <p class="section-subtitle">Từng tách cà phê được rang xay mộc và pha chế thủ công tỉ mỉ mỗi ngày.</p>
+        </header>
+
+        <!-- Danh sách sản phẩm dạng Grid: 6 card tĩnh -->
+        <ul class="products-grid">
+
+          <!-- Card 1: Cà phê Muối Lạc Hồng -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="100">
+            <figure class="product-figure">
+              <img src="assets/images/product-ca-phe-muoi.jpg" alt="Cà phê Muối Lạc Hồng béo ngậy mằn mặn" loading="lazy">
+              <span class="product-tag">Đặc sản quán</span>
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Cà Phê Muối Lạc Hồng</h3>
+              <p class="product-desc">Sự cân bằng tinh tế giữa lớp kem muối biển mịn màng và cốt Robusta đậm đà truyền thống.</p>
+              <div class="product-meta">
+                <data class="product-price" value="45000">45.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Cà Phê Muối Lạc Hồng">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+          <!-- Card 2: Cà phê Trứng Hà Nội -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="200">
+            <figure class="product-figure">
+              <img src="assets/images/product-ca-phe-trung.jpg" alt="Cà phê Trứng Hà Nội thơm ngậy" loading="lazy">
+              <span class="product-tag">Yêu thích</span>
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Cà Phê Trứng Hà Nội</h3>
+              <p class="product-desc">Lòng đỏ trứng gà tươi được đánh bông mịn như mây, thơm béo quyện cùng cà phê nóng ấm.</p>
+              <div class="product-meta">
+                <data class="product-price" value="49000">49.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Cà Phê Trứng Hà Nội">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+          <!-- Card 3: Bạc Xỉu Sữa Dừa -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="300">
+            <figure class="product-figure">
+              <img src="assets/images/product-bac-xiu.jpg" alt="Bạc Xỉu Sữa Dừa ngọt thanh" loading="lazy">
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Bạc Xỉu Sữa Dừa</h3>
+              <p class="product-desc">Hòa quyện ba tầng vị độc đáo: cà phê phin, sữa đặc thơm ngậy và nước cốt dừa Bến Tre thanh mát.</p>
+              <div class="product-meta">
+                <data class="product-price" value="42000">42.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Bạc Xỉu Sữa Dừa">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+          <!-- Card 4: Cold Brew Cam Sả -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="100">
+            <figure class="product-figure">
+              <img src="assets/images/product-cold-brew.jpg" alt="Cold Brew Cam Sả ủ lạnh 18 giờ" loading="lazy">
+              <span class="product-tag">Ủ lạnh 18h</span>
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Cold Brew Cam Sả</h3>
+              <p class="product-desc">Cà phê Arabica Cầu Đất ủ lạnh chậm suốt 18 tiếng, kết hợp tinh chất cam vàng tươi và nhánh sả thơm dịu.</p>
+              <div class="product-meta">
+                <data class="product-price" value="52000">52.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Cold Brew Cam Sả">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+          <!-- Card 5: Cà Phê Phin Đậm Vị -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="200">
+            <figure class="product-figure">
+              <img src="assets/images/product-ca-phe-phin.jpg" alt="Cà Phê Phin Truyền Thống Đậm Vị" loading="lazy">
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Cà Phê Phin Đậm Vị</h3>
+              <p class="product-desc">Chiết xuất từ hạt Robusta Buôn Ma Thuột rang mộc, thơm nồng đượm, hậu vị sâu lắng chuẩn gu Việt.</p>
+              <div class="product-meta">
+                <data class="product-price" value="35000">35.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Cà Phê Phin Đậm Vị">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+          <!-- Card 6: Trà Sen Vàng Kem Cheese -->
+          <li><article class="product-card" data-aos="fade-up" data-aos-delay="300">
+            <figure class="product-figure">
+              <img src="assets/images/product-tra-sen-vang.jpg" alt="Trà Sen Vàng Kem Cheese thanh nhã" loading="lazy">
+            </figure>
+            <div class="product-info">
+              <h3 class="product-name">Trà Sen Vàng Kem Cheese</h3>
+              <p class="product-desc">Trà ướp hoa sen thơm ngát, hạt sen ninh bùi dẻo cùng lớp kem phô mai sánh mịn phủ trên bề mặt.</p>
+              <div class="product-meta">
+                <data class="product-price" value="48000">48.000 ₫</data>
+                <a href="#contact" class="btn-product-order" aria-label="Đặt bàn để thưởng thức Trà Sen Vàng Kem Cheese">Đặt bàn</a>
+              </div>
+            </div>
+          </article></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CÂU CHUYỆN THƯƠNG HIỆU (BỐ CỤC 2 CỘT) -->
+    <section id="about" class="section section-about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Cột 1: Hình ảnh không gian và nghệ thuật pha chế -->
+          <figure class="about-image-wrapper" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/images/about-cafe-story.jpg" alt="Nghệ nhân pha chế cà phê tại Cafe Lạc Hồng" loading="lazy">
+            <figcaption class="about-badge">
+              <i class="fa-solid fa-leaf" aria-hidden="true"></i> 100% Cà phê sạch nguyên chất
+            </figcaption>
+          </figure>
+
+          <!-- Cột 2: Nội dung câu chuyện thương hiệu -->
+          <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+            <span class="section-tag">Về Chúng Tôi</span>
+            <h2 id="about-title" class="section-title">Hành Trình Gìn Giữ Hồn Vị Cà Phê Mộc</h2>
+            <p class="about-lead">
+              Lạc Hồng được sinh ra từ niềm trân quý dành cho những nông trường đất đỏ bazan và mong muốn tạo dựng một chốn dừng chân thanh thản giữa nhịp sống đô thị gấp gáp.
+            </p>
+            <p>
+              Chúng tôi tuyển chọn từng hạt Arabica Cầu Đất và Robusta Đắk Lắk được canh tác hữu cơ, rang mộc hoàn toàn không tẩm ướp phụ gia. Trong không gian phủ màu xanh dịu mát và ánh đèn kem ấm áp, mỗi ngụm cà phê là một khoảnh khắc bạn được kết nối lại với chính mình.
+            </p>
+            <ul class="about-points">
+              <li class="point-item">
+                <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                <div>
+                  <h3>Nguồn gốc nông trại minh bạch</h3>
+                  <p>Hạt cà phê hái chín thủ công, quy trình chế biến ướt và phơi tự nhiên đạt chuẩn xuất khẩu.</p>
+                </div>
+              </li>
+              <li class="point-item">
+                <i class="fa-solid fa-spa" aria-hidden="true"></i>
+                <div>
+                  <h3>Không gian xanh thư giãn</h3>
+                  <p>Thiết kế tối giản, nhiều cây xanh, ánh sáng tự nhiên lý tưởng cho làm việc và đọc sách.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ĐÁNH GIÁ KHÁCH HÀNG (3 CARD GRID) -->
+    <section id="reviews" class="section section-reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-tag">Khách Hàng Nói Gì</span>
+          <h2 id="reviews-title" class="section-title">Trải Nghiệm Tại Lạc Hồng</h2>
+          <p class="section-subtitle">Những phản hồi chân thực từ bạn bè đã ghé thăm và gắn bó cùng quán.</p>
+        </header>
+
+        <!-- Lưới 3 card đánh giá -->
+        <ul class="reviews-grid">
+
+          <!-- Card đánh giá 1 -->
+          <li><article class="review-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="review-stars" role="img" aria-label="Đánh giá 5 trên 5 sao">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              <p>"Không gian quán phối màu xanh và kem rất dễ chịu, bước vào là cảm thấy thư thái ngay. Món Cà phê Muối ở đây chuẩn vị nhất trong những quán mình từng thử!"</p>
+            </blockquote>
+            <footer class="reviewer-meta">
+              <img class="reviewer-avatar" src="assets/images/avatar-minh-trang.jpg" alt="Ảnh chân dung Minh Trang" loading="lazy">
+              <div class="reviewer-info">
+                <strong class="reviewer-name">Nguyễn Minh Trang</strong>
+                <span class="reviewer-job">Kiến trúc sư nội thất</span>
+              </div>
+            </footer>
+          </article></li>
+
+          <!-- Card đánh giá 2 -->
+          <li><article class="review-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="review-stars" role="img" aria-label="Đánh giá 5 trên 5 sao">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              <p>"Điểm đến ruột mỗi sáng cuối tuần của mình. Cà phê nguyên chất không bị chua gắt, bạn nhân viên luôn tươi cười nhẹ nhàng. Nhạc acoustic êm dịu rất dễ tập trung làm việc."</p>
+            </blockquote>
+            <footer class="reviewer-meta">
+              <img class="reviewer-avatar" src="assets/images/avatar-hoang-nam.jpg" alt="Ảnh chân dung Hoàng Nam" loading="lazy">
+              <div class="reviewer-info">
+                <strong class="reviewer-name">Trần Hoàng Nam</strong>
+                <span class="reviewer-job">Kỹ sư phần mềm</span>
+              </div>
+            </footer>
+          </article></li>
+
+          <!-- Card đánh giá 3 -->
+          <li><article class="review-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="review-stars" role="img" aria-label="Đánh giá 5 trên 5 sao">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              <p>"Cold Brew Cam Sả cực kỳ sảng khoái vào những buổi trưa oi ả. Quán theo đuổi phong cách tối giản nhưng từng góc nhỏ đều rất có gu và sạch sẽ."</p>
+            </blockquote>
+            <footer class="reviewer-meta">
+              <img class="reviewer-avatar" src="assets/images/avatar-khanh-linh.jpg" alt="Ảnh chân dung Khánh Linh" loading="lazy">
+              <div class="reviewer-info">
+                <strong class="reviewer-name">Lê Khánh Linh</strong>
+                <span class="reviewer-job">Nhà sáng tạo nội dung</span>
+              </div>
+            </footer>
+          </article></li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GIỜ MỞ CỬA & LIÊN HỆ -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-tag">Ghé Thăm Chúng Tôi</span>
+          <h2 id="contact-title" class="section-title">Giờ Mở Cửa &amp; Đặt Bàn</h2>
+          <p class="section-subtitle">Hãy để chúng tôi chuẩn bị sẵn chiếc bàn ấm cúng và tách cà phê thơm cho bạn.</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Cột 1: Thông tin liên hệ & Thời gian phục vụ -->
+          <div class="contact-info-card" data-aos="fade-right" data-aos-delay="100">
+            <h3 class="info-card-title">Thông Tin Quán</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></div>
+              <div class="contact-detail">
+                <p class="contact-label">Giờ Hoạt Động</p>
+                <p>Thứ Hai - Thứ Sáu: <strong>07:00 - 22:30</strong></p>
+                <p>Thứ Bảy - Chủ Nhật: <strong>06:30 - 23:00</strong></p>
+              </div>
+            </div>
+
+            <address class="contact-address">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <div class="contact-detail">
+                  <p class="contact-label">Địa Chỉ</p>
+                  <p>Số 125 Đường Lạc Hồng, Phường Đa Kao, Quận 1, TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                <div class="contact-detail">
+                  <p class="contact-label">Điện Thoại</p>
+                  <p><a href="tel:0987654321">0987 654 321</a> / <a href="tel:02838123456">(028) 38 123 456</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                <div class="contact-detail">
+                  <p class="contact-label">Email</p>
+                  <p><a href="mailto:hello@cafelachong.vn">hello@cafelachong.vn</a></p>
+                </div>
+              </div>
+            </address>
+          </div>
+
+          <!-- Cột 2: Biểu mẫu đặt bàn trước -->
+          <div class="booking-card" data-aos="fade-left" data-aos-delay="200">
+            <h3 class="info-card-title">Đặt Chỗ Trước</h3>
+            <form class="booking-form" action="#contact" method="get">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Họ và tên của bạn</label>
+                <input type="text" id="full-name" name="name" class="form-control" autocomplete="name" placeholder="Ví dụ: Nguyễn Văn An" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone-number" class="form-label">Số điện thoại</label>
+                  <input type="tel" id="phone-number" name="phone" class="form-control" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" required>
+                </div>
+                <div class="form-group">
+                  <label for="guest-count" class="form-label">Số lượng khách</label>
+                  <select id="guest-count" name="guests" class="form-control" required>
+                    <option value="1">1 người</option>
+                    <option value="2" selected>2 người</option>
+                    <option value="3-4">3 - 4 người</option>
+                    <option value="5+">5 người trở lên (nhóm)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-date" class="form-label">Ngày hẹn</label>
+                  <input type="date" id="booking-date" name="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="booking-time" class="form-label">Khung giờ (07:00 – 22:30)</label>
+                  <input type="time" id="booking-time" name="time" min="07:00" max="22:30" class="form-control" required>
+                  <small class="form-note">T7 - CN mở cửa sớm 06:30, đến 23:00, vui lòng ghi chú nếu cần</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-notes" class="form-label">Ghi chú thêm (tùy chọn)</label>
+                <textarea id="booking-notes" name="notes" class="form-control form-textarea" rows="3" placeholder="Yêu cầu chỗ ngồi ngoài trời, khu vực yên tĩnh để làm việc..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Xác Nhận Giữ Chỗ</button>
+              <p id="booking-status" class="booking-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== PHẦN CHÂN TRANG (FOOTER) ==================== -->
+  <footer class="site-footer">
+    <h2 class="visually-hidden">Thông tin chân trang</h2>
+    <div class="container footer-content">
+      <!-- Cột thương hiệu -->
+      <div class="footer-column brand-col">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-mark"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+          <span class="logo-text">Cafe Lạc Hồng</span>
+        </a>
+        <p class="footer-about-text">
+          Chốn thưởng thức cà phê rang mộc chuẩn vị trong bầu không khí ấm áp, tối giản mang đậm tinh thần Việt.
+        </p>
+      </div>
+
+      <!-- Cột liên kết nhanh -->
+      <div class="footer-column">
+        <h3 class="footer-title">Khám Phá</h3>
+        <nav aria-label="Liên kết chân trang">
+          <ul class="footer-links">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#menu">Thực đơn nổi bật</a></li>
+            <li><a href="#about">Câu chuyện thương hiệu</a></li>
+            <li><a href="#reviews">Đánh giá khách hàng</a></li>
+            <li><a href="#contact">Giờ mở cửa &amp; Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Cột thông tin liên lạc -->
+      <div class="footer-column">
+        <h3 class="footer-title">Thông Tin</h3>
+        <address class="footer-address">
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 125 Đường Lạc Hồng, P. Đa Kao, Q.1, TP.HCM</li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> 0987 654 321</li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@cafelachong.vn</li>
+          </ul>
+        </address>
+      </div>
+
+      <!-- Cột mạng xã hội -->
+      <div class="footer-column">
+        <h3 class="footer-title">Theo Dõi Quán</h3>
+        <p class="footer-social-desc">Cập nhật ưu đãi và những câu chuyện cà phê mới nhất:</p>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Kênh Facebook của Cafe Lạc Hồng"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Kênh Instagram của Cafe Lạc Hồng"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.tiktok.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Kênh TikTok của Cafe Lạc Hồng"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Kênh YouTube của Cafe Lạc Hồng"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dòng bản quyền dưới cùng -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 Cafe Lạc Hồng. Tất cả các quyền được bảo lưu. Dự án bài kiểm tra giữa kỳ môn Thiết kế Web.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Thư viện AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Khởi tạo AOS với cấu hình tối ưu -->
+  <script>
+    (function () {
+      'use strict';
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Màn hình hẹp: bỏ delay so le (mỗi card xuất hiện riêng lẻ, delay chỉ gây cảm giác chậm)
+      if (window.matchMedia('(max-width: 1024px)').matches) {
+        document.querySelectorAll('[data-aos-delay]').forEach(el => el.removeAttribute('data-aos-delay'));
+      }
+
+      // Khởi tạo AOS có guard: nếu CDN lỗi, thêm class .no-js để CSS (style.css) hiển thị lại nội dung
+      if (window.AOS) {
+        AOS.init({
+          duration: 800,
+          easing: 'ease-out-cubic',
+          once: true,
+          offset: 80,
+          disable: reduceMotion
+        });
+        // Sau khi card xuất hiện xong, trả transition về nhanh để hover/un-hover không bị trễ theo AOS
+        document.addEventListener('aos:in', (e) => {
+          const el = e.detail;
+          if (el && el.classList) setTimeout(() => el.classList.add('is-settled'), 1300);
+        });
+      } else {
+        document.documentElement.classList.add('no-js');
+      }
+
+      // Đóng menu mobile khi bấm liên kết hoặc nhấn Escape
+      const menuBtn = document.querySelector('.menu-btn');
+      const setMenu = (open) => {
+        if (!menuBtn) return;
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Đóng menu điều hướng' : 'Mở menu điều hướng');
+      };
+      if (menuBtn) menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
+      document.querySelectorAll('.nav-link, .nav-cta').forEach(link => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menuBtn && menuBtn.getAttribute('aria-expanded') === 'true') { setMenu(false); menuBtn.focus(); }
+      });
+
+      // Ngày tối thiểu = hôm nay theo GIỜ ĐỊA PHƯƠNG (không dùng UTC)
+      const bookingDateInput = document.getElementById('booking-date');
+      const setMinDate = () => {
+        if (!bookingDateInput) return;
+        const now = new Date();
+        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+        bookingDateInput.min = now.toISOString().split('T')[0];
+      };
+      setMinDate();
+
+      // Xử lý gửi biểu mẫu đặt bàn
+      const bookingForm = document.querySelector('.booking-form');
+      const bookingStatus = document.getElementById('booking-status');
+      if (bookingForm && bookingStatus) {
+        bookingForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          bookingStatus.textContent = 'Cảm ơn bạn! Thông tin giữ chỗ đã được ghi nhận (bản demo: dữ liệu chưa được gửi đến máy chủ).';
+          bookingStatus.className = 'booking-status is-success';
+          // Animate.css cho phản hồi: chạy lại mỗi lần gửi
+          bookingStatus.classList.remove('animate__animated', 'animate__fadeInUp');
+          void bookingStatus.offsetWidth;
+          bookingStatus.classList.add('animate__animated', 'animate__fadeInUp');
+          bookingForm.reset();
+          setMinDate();
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
